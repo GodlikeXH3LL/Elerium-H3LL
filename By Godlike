@@ -1,9 +1,22 @@
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/memejames/elerium-v2-ui-library/main/Library", true))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/memejames/elerium-v2-ui-library/main/Library"
 
 local window = library:AddWindow("H3LL Ninja Legends V1", {
-    Window.image = "rbxassetid://102500714477332",
-    TitleFont = Enum.Font.Bangers,
+    titleFont = Enum.Font.Bangers,
     main_color = Color3.fromRGB(1, 2, 3),
     min_size = Vector2.new(655, 650),
     can_resize = false,
 })
+
+window.Name = "Window"
+window.Parent = Prefabs
+window.Active = true
+window.BackgroundColor3 = Color3.new(1, 1, 1)
+window.BackgroundTransparency = 1
+window.ClipsDescendants = true
+window.Position = UDim2.new(0, 20, 0, 20)
+window.Selectable = true
+window.Size = UDim2.new(0, 200, 0, 200)
+window.Image = "rbxassetid://2851926732"
+window.ImageColor3 = Color3.new(0.0823529, 0.0862745, 0.0901961)
+window.ScaleType = Enum.ScaleType.Slice
+window.SliceCenter = Rect.new(12, 12, 12, 12)
